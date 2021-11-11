@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(207, 206, 206)
+}
+
+P{
+    font-size: 14px;
+}
+
+header {
+    box-sizing: border-box;
+    background-color: #EAC926;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+
+form {
+    margin: 20px;
+    
+}
+
+form input {
+    width: 30%;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+p.credito_cuotas {
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    
+}
+
+div.burger-menu {
+    width: 2.5rem;
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #1259c3;
+    border-radius: 15%;
+}
+
+div.burger-menu i {
+    color: white;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main {
+    background-color: white;
+    padding: 1em;
+    margin: 0 5px ;
+
+    margin: auto;
+    width: 90%;
+
+}
+
+main section h3.titulares {
+    font-size: 24px;
+    margin-top: 2.8rem;
+}
+
+section article img {
+    margin-top: 50px;
+}
+
+main section article p.precios {
+    font-size: 18px;
+}
+
+.descuentos{
+    color: green;
+}
+
+.carrito{
+    color: green;
+    border: solid green 1px;
+    
+    width: 5%;
+    border-radius: 100%;
+    margin-top: 20px;
+
+}
+
+main section article p.descuentos {
+    font-size: 16px;
+}
+
+main section article h4.descripciones {
+    font-size: 16px;
+}
+
+footer {
+    margin: 2px 5px;
+    border: 1px;
+    background-color: white;
+    
+    
+}
+
+footer section article{
+    padding: 30px;
+}
+
+.titulares-footer {
+    font-size: 24px;
+    color: #666;
+}
+
+section.footer article i {
+    font-size: 2.5em;
+    color: #03264C;
+}
+
+
+
+
+/*Clase 13 en vivo Media Query*/
+
+
+main section article{
+    padding: 10px;
+}
+
+
+
+article div {
+    border: 15px;
+    border-top: solid 2px #ebebeb;
+}
+
+
+
+
+header div img{
+    width: 80%;
+    height: 80%;
+  }
+
+  main article div img{
+    width: 80%;
+    height: 80%;
+  }
+
+
+/*Clase 13 media querys*/
+
+main section article div {
+    box-shadow: 0px 0px 10px rgb(230, 227, 227);
+}
+
+
+@media(max-width: 361px){
+    
+       .descripciones{
+           display: none;           
+       }
+       
+    main section article div img{
+        box-shadow: none;
+    }
+}
+
+@media(min-width: 769px) {
+
+        
+        
+
+        .burger-menu i{
+            display: none;
+        }
+        div.burger-menu {
+           display: none;
+            
+            
+        }
+} 
+
+
+
