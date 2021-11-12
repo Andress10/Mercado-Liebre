@@ -1,24 +1,31 @@
 
 /*Media Querys*/
-@media (min-width: 480px) {
+@media (min-width: 769px) {
+
+    header{
+        padding: 2%;
+    }
 
     .top-header  {   
+    
     display: flex;
     flex-wrap: wrap;  /*el wrap es para que conserven su tama;o, como al ser 50% cada uno se usa en total el 100% del espacio de la pagina*/
-    padding: 0px;
-    justify-content: space-between; /*me distribuira el espacio en y los istems que contenta mi clase padre(top.header)*/
+    margin: 0;
+    padding: 0;
+    /*me distribuira el espacio en y los istems que contenta mi clase padre(top.header)*/
     }
         
     .copy-header {   
-        width:35%; 
+        width:30%; 
         font-size: 90%;
         padding: 0;
         flex-grow: 0.5;   
            
     }
 
-    .logo {           
-        width: 30%; /*esto es para compartir el espacio con el Form*/                 
+    .logo {    
+        height: 100px;       
+        width: 40%; /*esto es para compartir el espacio con el Form*/                 
     }
  
     .form{      
@@ -63,6 +70,7 @@
     .main-navbar ul li{
         display: flex;
         justify-content: space-around;
+        margin-top: 10%;
     }
     
     .main-navbar ul li a{
@@ -77,7 +85,7 @@
 
     main article img{
         display: flex;
-        width: 50%;
+        width: 25%;
     }
     main section article .description {
         display: block; /*este display va a mostrar la descripcion pasado el ancho de 361 px*/
@@ -94,13 +102,15 @@
 
     /*dando estilos a los articulos*/
     .products{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap; /*este wrap para que se separen de a 2 columnas se lo tengo que dar al padre si le doy a los hijo no cambiaria nada porque el contenedor de article es .products*/
+        
     }
 
     main article {     
-        width: 45%;       
+        width: 24%;       
     }
 
     .main-article{
@@ -109,12 +119,16 @@
     }
 
     .discount{
-        width: 50%;      
+        width: 60%;   
+        display: flex;
+        justify-content: space-around; 
+        justify-content: end;
     }
 
     .price{
-        width: 50%;
+        width: 40%;
     }
+
 
     .description{
         width: 100%;
@@ -126,15 +140,15 @@
 
     /*Inicio de Footer*/
     h3.titulares-footer{
-        font-size: 30px;
+        font-size: 2rem;
     }
 
     p.descripciones{
-        font-size: 15px;
+        font-size: 1rem;
     }
 
     h5{
-        font-size: 15px;
+        font-size: 1rem;
     }
 }
 
