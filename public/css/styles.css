@@ -1,131 +1,216 @@
-*{
+* {
+    margin: 0px; /*este margin hace que se quiten todos los margenes del html incluidos los puntos de las UL*/
+    padding: 0px; /*el padding se borra todos los html y borra tambien los espacios entre en contenido y el borde, incluido los puntos UL*/
     box-sizing: border-box;
-    padding: 0;
 }
+
 
 body {
     font-family: 'Roboto', sans-serif;
-    text-align: center;
-    box-sizing: border-box;
-    background-color: rgb(207, 206, 206)
+    background-color: #ebebeb;
+   /* text-align: center;
+    box-sizing: border-box;*/
+}
+
+h3 {
+    font-size: 24px;
 }
 
 P{
-    font-size: 14px;
+    font-size: 12px;
+}
+
+/* Empieza header */
+
+
+
+.top-header  {
+ display: flex;
+ flex-wrap: wrap;  /*el wrap es para que conserven su tama;o, como al ser 50% cada uno se usa en total el 100% del espacio de la pagina*/
+ padding: 5%;
+ align-items: center;
+ 
 }
 
 header {
-    box-sizing: border-box;
     background-color: #EAC926;
     padding: 10px;
+}
+
+.logo {
+    padding: 10px;
+    width: 50%; /*esto es para compartir el espacio con el Form*/
+}
+.form{
+    
+    width: 50%;
+}
+
+.form input {
+    
+    width: 80%;
+    
+}
+
+::-webkit-input-placeholder {
+    /* Esto es para cambiar el tama;o y si quiero el color del placehordel del Form */
+    color: rgb(72, 39, 82);
+    font-size: 10px;
+    
+
+}
+
+
+
+.form button{   
+    width: 15%;
+   
+}
+
+header div.logo img {
     width: 100%;
 }
 
 
-
-
-form {
-    margin: 20px;
-    
-}
-
-form input {
-    width: 30%;
-    height: 1.5rem;
+.copy-header {
+    display: flex;
+    font-weight: 200px;
+    font-size: 15px;
     text-align: center;
-    border-radius: 4px;
+    padding: 5px;
+    justify-content: space-between;
 }
 
-p.credito_cuotas {
-    margin: 10px;
-}
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
+.main-navbar ul  {
+    list-style: none;
     
 }
+.main-navbar a{
+    
+    text-decoration: none;
+    color: #222;
+    display: inline-block;/*Esto sirve para que se conserven los espacios y no se pisen los bloques o cajas, poniendo un  border: 1px solid; podes darte cuenta a la hora de usar el display: inline-block que si se pisa o no las cajas, sirve para tener todo ordenado*/  
+    padding: 5px 0;
+    font-size: 17px;
+}
+
 
 div.burger-menu {
-    width: 2.5rem;
-    height: 2.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 10px;
-    background-color: #1259c3;
-    border-radius: 15%;
-}
-
-div.burger-menu i {
+ 
+    border: solid 1px black;    
+    text-align: center;
+    background-color: #0044AA;
     color: white;
+    width: 2rem;
+    border-radius: 20%;
+    padding: 1%; 
+    margin: 10px auto 0;/*el margin este el primero toma el top despues el rigth, button y left*/
+    
 }
 
-section.banner img{
+.main-navbar{
+    display: none; /*es display none lo uso para borrar lo que contiene, en este caso las ul li y su contenido, todo esto es para responsive celular*/ 
+}
+
+
+
+/* Termina el header */
+
+
+
+
+/*Empieza el Main*/
+
+.price {
+    width: 30%;
+    font-size: 18px;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+    display: none;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img {
     width: 100%;
 }
 
 main {
-    background-color: white;
-    padding: 1em;
-    margin: 0 5px ;
-
-    margin: auto;
-    width: 90%;
-
+    width: 90%; /*se adapta al 90% del total de la pagina dejando 5% de cada lado izquierada y derecha*/
+    margin: 0 auto; /*con el margin autopmatico se centran las cosas segun el tama;o de pantalla*/
 }
 
-main section h3.titulares {
-    font-size: 24px;
-    margin-top: 2.8rem;
+main section article {
+    background-color: #fff;
+    margin: 10px 0px; /* este margin lo estoy usando para separacion entre articulos*/
 }
 
-section article img {
-    margin-top: 50px;
+main section article img {
+    width: 100%;
 }
 
-main section article p.precios {
-    font-size: 18px;
+main section article i,
+.discount {
+    color: #39b54a;
 }
 
-.descuentos{
-    color: green;
+.main-article i { /*aca se jugo con el truck-icon de los articulos y dale estilo*/
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 15%; 
+    top: -15px;
 }
 
-.carrito{
-    color: green;
-    border: solid green 1px;
+main section h3 {
+    margin: 20px 0px; /*este margin es el espacio de basado en tu ultima Visita*/
+}
+
+article div.main-article {
     
-    width: 5%;
-    border-radius: 100%;
-    margin-top: 20px;
-
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline; /*alineamiento de linea Base sirve pa ese*/
+        border-top: 1px solid #ebebeb;
+        position: relative;
+        padding: 15px;
+    
 }
 
-main section article p.descuentos {
-    font-size: 16px;
-}
 
-main section article h4.descripciones {
-    font-size: 16px;
-}
+
+
 
 footer {
-    margin: 2px 5px;
-    border: 1px;
+    margin: 5%;
     background-color: white;
-    
-    
 }
 
 footer section article{
-    padding: 30px;
+    padding: 30px; /*esto es es borde por asi decir dentro del margin*/
+}
+
+footer article  {
+    text-align: center;
 }
 
 .titulares-footer {
@@ -140,67 +225,6 @@ section.footer article i {
 
 
 
-
-/*Clase 13 en vivo Media Query*/
-
-
-main section article{
-    padding: 10px;
-}
-
-
-
-article div {
-    border: 15px;
-    border-top: solid 2px #ebebeb;
-}
-
-
-
-
-header div img{
-    width: 80%;
-    height: 80%;
-  }
-
-  main article div img{
-    width: 80%;
-    height: 80%;
-  }
-
-
-/*Clase 13 media querys*/
-
-main section article div {
-    box-shadow: 0px 0px 10px rgb(230, 227, 227);
-}
-
-
-@media(max-width: 361px){
+@media (min-width: 768px) {
     
-       .descripciones{
-           display: none;           
-       }
-       
-    main section article div img{
-        box-shadow: none;
-    }
 }
-
-@media(min-width: 769px) {
-
-        
-        
-
-        .burger-menu i{
-            display: none;
-        }
-        div.burger-menu {
-           display: none;
-            
-            
-        }
-} 
-
-
-
