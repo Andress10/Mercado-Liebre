@@ -87,12 +87,12 @@ header div.logo img {
     list-style: none;
     
 }
-.main-navbar a{
+.main-navbar li a{
     
     text-decoration: none;
     color: #222;
     display: inline-block;/*Esto sirve para que se conserven los espacios y no se pisen los bloques o cajas, poniendo un  border: 1px solid; podes darte cuenta a la hora de usar el display: inline-block que si se pisa o no las cajas, sirve para tener todo ordenado*/  
-    padding: 5px 0;
+    padding: 5px 0;  
     font-size: 17px;
 }
 
@@ -134,8 +134,7 @@ div.burger-menu {
     font-weight: normal;
 }
 
-h3,
-.description {
+h3, .description {
     color: #666;
     
 }

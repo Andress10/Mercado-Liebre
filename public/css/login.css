@@ -1,0 +1,26 @@
+*{
+    margin: 0px; /*este margin hace que se quiten todos los margenes del html incluidos los puntos de las UL*/
+    padding: 0px; /*el padding se borra todos los html y borra tambien los espacios entre en contenido y el borde, incluido los puntos UL*/
+    box-sizing: border-box;
+}
+
+
+.container-form{
+    max-width: 600px;
+    margin: 20px auto 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    
+    font-size: 100%;
+}

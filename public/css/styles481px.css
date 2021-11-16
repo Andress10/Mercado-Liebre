@@ -13,7 +13,8 @@
         width:35%; 
         font-size: 90%;
         padding: 0;
-        flex-grow: 0.5;   
+        flex-grow: 0.5;  
+         
            
     }
 
@@ -63,12 +64,17 @@
     .main-navbar ul li{
         display: flex;
         justify-content: space-around;
+       
     }
     
     .main-navbar ul li a{
-        font-size: 15px;
+
+        /*el vw(viewport widht) es la medida del ancho de la pantalla sirve para hacer estas peque;eces*/
+        font-size: 2.3vw;
         display: inline;
-        margin: 0px 5px;
+        margin: 0px 2px;
+        display: flex;
+        
     }
 
 

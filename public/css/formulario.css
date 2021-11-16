@@ -1,0 +1,116 @@
+*{
+    margin: 0px; /*este margin hace que se quiten todos los margenes del html incluidos los puntos de las UL*/
+    padding: 0px; /*el padding se borra todos los html y borra tambien los espacios entre en contenido y el borde, incluido los puntos UL*/
+    box-sizing: border-box;
+}
+
+
+h3{
+    display: flex;
+    justify-content: center;
+    color: black;
+    opacity: 0.8;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    color: black;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.usuario{
+    
+    display: flex;
+     /* border: solid 1px black;  */
+    flex-direction: column;
+    width: 60%;
+    margin: 20px auto 0px;
+}
+
+.usuario input{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.day-domicilio{
+    display: flex;
+    justify-content: center;
+}
+
+.day-domicilio input {
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.radio{
+    display: flex;
+    justify-content: center;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    justify-content: center;
+
+}
+
+.password{
+ text-align: center;
+}
+
+.password input{
+    border-radius: 5px;
+    font-size: 18px;
+    width: 60%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.avatar input{
+    display: flex;
+    /* border: solid 1px black;  */
+   flex-direction: column;
+   width: 60%;
+   margin: 20px auto 0px;
+   
+    
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    
+    /* border: solid 1px; */
+    margin: 0%;
+    padding: 0%;
+}
+
+.botones input{
+    font-size: 20px;
+    background-color: rgb(134, 233, 236);
+    transition: 0.7s;
+   
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+
+.botones input:hover{
+    background-color: rgb(96, 235, 108);
+
+}
