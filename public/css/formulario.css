@@ -5,6 +5,13 @@
 }
 
 
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto 0%; 
+}
+
 h3{
     display: flex;
     justify-content: center;
@@ -32,7 +39,7 @@ h4 {
 .usuario input{
     width: 100%;
     margin-bottom: 10px;
-    height: 25px;
+    height: 35px;
     text-align: center;
     border-radius: 5px;
 }
@@ -49,10 +56,17 @@ h4 {
 }
 
 .day-domicilio input {
+    width: 100%;
+    width: 40%;
     border-radius: 5px;
     text-align: center;
+    height: 30px;
 }
 
+.formulario input::placeholder {
+    
+    font-size: 18px;
+}
 
 .radio{
     display: flex;
@@ -77,6 +91,7 @@ h4 {
     width: 60%;
     margin-top: 10px;
     text-align: center;
+    height: 30px;
 }
 
 .avatar input{
@@ -101,7 +116,7 @@ h4 {
 .botones input{
     font-size: 20px;
     background-color: rgb(134, 233, 236);
-    transition: 0.7s;
+    transition: 0.5s;
    
     margin-left: 10px;
     margin-right: 10px;

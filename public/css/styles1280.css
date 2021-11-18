@@ -1,9 +1,9 @@
 
 /*Media Querys*/
-@media (min-width: 769px) {
+@media (min-width: 1280px) {
 
     header{
-        padding: 2%;
+        padding: 10px;
     }
 
     .top-header  {   
@@ -27,6 +27,11 @@
         height: 100px;       
         width: 40%; /*esto es para compartir el espacio con el Form*/                 
     }
+
+    .copy-header{
+        font-size: 20px;
+    }
+
  
     .form{      
         width: 15%;     
@@ -37,13 +42,13 @@
 
     .form input {       
     width: 65%;
-    height: 30px;  
+    height: 40px;  
     }
     
     .form button{   
-        width: 25px;
-        height: 30px;    
-    }
+        width: 35px;
+        height: 40px;    
+    }   
 
     
     div.burger-menu{
@@ -53,6 +58,7 @@
     .main-navbar{
         display: flex;
         justify-content: space-between;
+        margin: 5% auto 0%;
         
     }
     
@@ -65,6 +71,7 @@
     .ul2{
         display: flex;
         justify-content: end;
+        
     }
     
     .main-navbar ul li{
@@ -80,7 +87,11 @@
     }
 
 
+
    
+
+    /*main*/
+    
     
 
     main article img{
@@ -93,7 +104,7 @@
         transition: opacity 0.5s;
     }
 
-    main section article .description:hover{
+    main section article:hover .description{
         opacity: 1;
     }
 
@@ -106,6 +117,17 @@
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+
+
+    .main-article i{
+      transition: transform 1s;
+    }
+
+    main section .products article:hover i {
+        transform: rotate(-90deg);
+    }
+
+  
 
     /*Inicio de Main*/
 
@@ -144,9 +166,6 @@
     }
 
 
-
- 
-    
     /*Fin de Main*/
 
 
