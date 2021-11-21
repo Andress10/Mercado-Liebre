@@ -6,10 +6,16 @@
 
 
 
-.main-navbar{
+
+
+.top-header{
     display: flex;
     justify-content: space-between;
-    margin: 5% auto 0%; 
+    padding-bottom: 60px;
+}
+
+.main-navbar{
+  display: none;
 }
 
 h3{
@@ -115,7 +121,7 @@ h4 {
 
 .botones input{
     font-size: 20px;
-    background-color: rgb(134, 233, 236);
+    background-color: rgb(211, 211, 211);
     transition: 0.5s;
    
     margin-left: 10px;
@@ -126,6 +132,5 @@ h4 {
 
 
 .botones input:hover{
-    background-color: rgb(96, 235, 108);
-
+    background-color: #0022AA;
 }

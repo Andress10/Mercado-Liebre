@@ -75,10 +75,10 @@ header div.logo img {
 
 .copy-header {
     
-    font-weight: 200px;
-    font-size: 15px;
-    text-align: end ;
     
+    font-size: 15px;
+    text-align: center ;
+    margin: auto;
     
 }
 
