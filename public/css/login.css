@@ -5,6 +5,16 @@
 }
 
 
+.top-header{
+    padding-bottom: 55px;
+}
+
+.main-navbar{
+    display: block;
+    display: flex;
+
+}
+
 .container-form{
     max-width: 600px;
     margin: 20px auto 25px;
@@ -31,3 +41,12 @@ input::placeholder{
 .boton input:hover{
     background-color: #0022AA;
 }
+
+
+@media (max-width: 480px) {
+
+    .main-navbar {   
+        display: none;
+    }
+}
+       

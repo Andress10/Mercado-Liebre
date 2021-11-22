@@ -15,7 +15,8 @@
 }
 
 .main-navbar{
-  display: none;
+  display: block;
+  display: flex;
 }
 
 h3{
@@ -134,3 +135,20 @@ h4 {
 .botones input:hover{
     background-color: #0022AA;
 }
+
+
+@media (max-width: 480px) {
+
+    .main-navbar {   
+        display: none;
+    }
+}
+       
+
+@media (max-width: 769px) {
+
+    .top-header {   
+        padding-bottom: 30px;
+    }
+}
+       
